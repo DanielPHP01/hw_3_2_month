@@ -8,15 +8,15 @@ public class BankAccount  {
 
     public void deposit(double sum) {
         amount += sum;
-        System.out.println("На счету " + sum);
+        System.out.println("РќР° СЃС‡РµС‚Сѓ " + sum);
     }
 
     public void withDraw(int sum) throws Exception {
         if (amount < sum) {
-            throw new LimitException(" Не достаточно средств ",amount);
+            throw new LimitException(" РќРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ ",amount);
         } else {
             amount -= sum;
-            System.out.println("вы сняли -" + sum);
+            System.out.println("РІС‹ СЃРЅСЏР»Рё -" + sum);
 
         }
     }
